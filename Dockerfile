@@ -21,3 +21,5 @@ RUN useradd --no-create-home --uid 10001 webapp \
 USER webapp
 
 CMD ["gunicorn", "--bind", "0.0.0.0:8000", "--workers", "3", "--timeout", "10", "--access-logfile", "-", "webapp:create_app()"]
+
+# just a comment to test pull --rebase
